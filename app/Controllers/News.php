@@ -56,6 +56,7 @@ class News extends BaseController
             . view('templates/footer');
     }
 
+    // this function is for the creation of news articles
     public function create()
     {
         helper('form');
@@ -83,6 +84,8 @@ class News extends BaseController
                 . view('templates/footer');
         }
 
+
+        // grab our model, for database access
         $model = model(NewsModel::class);
 
         $model->save([
@@ -91,8 +94,11 @@ class News extends BaseController
             'body' => $post['body'],
         ]);
 
-        return view('templates/header', ['title' => 'Create a news item'])
-            . view('news/success')
-            . view('templates/footer');
+        // return view('templates/header', ['title' => 'Create a news item'])
+        //     . view('news/success')
+        //     . view('templates/footer');
+        // redirect to home page instead of success page
+        return redirect()->to('news/');
+        
     }
 }
