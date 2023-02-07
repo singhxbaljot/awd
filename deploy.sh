@@ -4,4 +4,4 @@ git add -A .
 git commit -m "$desc" && \
 # git push https://github.com/singhxbaljot/awd-ci.git main
 
-git push https://singh@baljot@github.com/singhxbaljot/awd-ci.git main
+git push https://singhxbaljot@github.com/singhxbaljot/awd-ci.git main
