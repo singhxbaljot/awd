@@ -1,5 +1,4 @@
 #!/bin/bash
-echo TOKEN: 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
 read -p "Commit description: " desc
 git add -A .
 git commit -m "$desc" && \

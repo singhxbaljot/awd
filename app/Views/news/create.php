@@ -3,6 +3,7 @@
 <?= session()->getFlashdata('error') ?>
 <?= validation_list_errors() ?>
 
+
 <form action="<?= base_url() ?>/news/create" method="post">
     <?= csrf_field() ?>
 
@@ -14,5 +15,5 @@
     <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
     <br>
 
-    <input type="submit" name="submit" value="Create news item">
+    <input class="btn btn-primary" type="submit" name="submit" value="Create news item">
 </form>
