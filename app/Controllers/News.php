@@ -97,7 +97,7 @@ class News extends BaseController
         // return view('templates/header', ['title' => 'Create a news item'])
         //     . view('news/success')
         //     . view('templates/footer');
-        // redirect to home page instead of success page
+        // redirect to home page instead of success page, instead index
         return redirect()->to('news/');
         
     }
